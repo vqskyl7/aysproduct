@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { ProductEmptyState } from "@/components/ProductEmptyState";
 import { Roadmap } from "@/components/Roadmap";
 import { products } from "@/data/products";
+import { LaunchSignup } from "@/components/LaunchSignup";
 
 export default function Home() {
   return (
@@ -116,6 +117,7 @@ export default function Home() {
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-zinc-500">
         © 2026 AysProduct. Все права защищены.
       </footer>
+     <LaunchSignup />
     </main>
   );
 }
