@@ -10,6 +10,26 @@ export type Product = {
   link?: string;
 };
 
+export type FutureCategory = {
+  title: string;
+  description: string;
+};
+
+export const futureCategories: FutureCategory[] = [
+  {
+    title: "Игры",
+    description: "Будущие игровые проекты, демо и релизы.",
+  },
+  {
+    title: "Приложения",
+    description: "Мобильные и веб-приложения для повседневных задач.",
+  },
+  {
+    title: "Программы",
+    description: "Утилиты, инструменты и программы для ПК.",
+  },
+];
+
 export const products: Product[] = [
   {
     id: "ays-demo",

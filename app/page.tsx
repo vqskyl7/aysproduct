@@ -4,6 +4,7 @@ import { ProductEmptyState } from "@/components/ProductEmptyState";
 import { Roadmap } from "@/components/Roadmap";
 import { products } from "@/data/products";
 import { LaunchSignup } from "@/components/LaunchSignup";
+import { Hero } from "@/components/Hero";
 
 export default function Home() {
   return (
