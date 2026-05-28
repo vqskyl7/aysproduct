@@ -31,10 +31,10 @@ export default function ProductsPage() {
                   <h2 className="mt-2 text-xl font-semibold">{product.title}</h2>
                   <p className="mt-3 text-zinc-400">{product.description}</p>
                   <a
-                    href={product.link ?? "#"}
+                    href={`/products/${product.slug}`}
                     className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-zinc-950"
                   >
-                    Открыть <ExternalLink className="h-4 w-4" />
+                    Подробнее <ExternalLink className="h-4 w-4" />
                   </a>
                 </article>
               ))}

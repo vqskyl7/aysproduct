@@ -1,26 +1,27 @@
 export type Product = {
   id: string;
+  slug: string;
   title: string;
   type: "Игра" | "Приложение" | "Программа";
-  status: "Идея" | "В разработке" | "Beta" | "Готово" | "Скоро";
+  status: "Идея" | "В разработке" | "Beta" | "Готово";
   description: string;
+  longDescription: string;
+  version?: string;
   link?: string;
 };
 
-// Сейчас продуктов нет. Когда появится первый проект, добавь его сюда.
-export const products: Product[] = [];
-
-export const futureCategories = [
+export const products: Product[] = [
   {
-    title: "Игры",
-    description: "Будущие игровые проекты, демо-версии, релизы и обновления.",
-  },
-  {
-    title: "Приложения",
-    description: "Мобильные и веб-приложения для задач, идей и повседневного использования.",
-  },
-  {
-    title: "Программы",
-    description: "Утилиты, инструменты и программы для компьютера.",
+    id: "ays-demo",
+    slug: "ays-demo",
+    title: "Ays Demo",
+    type: "Приложение",
+    status: "Идея",
+    description:
+      "Тестовый продукт для проверки страниц AysProduct. Позже его можно удалить.",
+    longDescription:
+      "Ays Demo — временный пример продукта. Он нужен, чтобы проверить, как будет выглядеть страница будущей игры, приложения или программы на сайте AysProduct.",
+    version: "0.1.0",
+    link: "#",
   },
 ];
