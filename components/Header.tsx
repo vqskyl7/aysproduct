@@ -26,9 +26,9 @@ export function Header() {
           <Link className="transition hover:text-white" href="/about">
             О проекте
           </Link>
-          <Link className="transition hover:text-white" href="/#roadmap">
-            План
-          </Link>
+	<Link className="transition hover:text-white" href="/roadmap">
+  	План
+	</Link>
           <Link className="transition hover:text-white" href="/#contact">
             Контакты
           </Link>
