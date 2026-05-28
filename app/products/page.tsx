@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { ProductEmptyState } from "@/components/ProductEmptyState";
 import { products } from "@/data/products";
 import { ExternalLink } from "lucide-react";
+import { AddProductGuide } from "@/components/AddProductGuide";
 
 export default function ProductsPage() {
   return (
@@ -42,6 +43,7 @@ export default function ProductsPage() {
           )}
         </div>
       </section>
+     <AddProductGuide />
     </main>
   );
 }
